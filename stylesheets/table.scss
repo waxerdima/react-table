@@ -1,0 +1,41 @@
+.react-table {
+  border-spacing: 0;
+  th {
+    background-color: #eee;
+  }
+  tr {
+    &:nth-child(even) { background-color: #fafafa; }
+  }
+  th {
+    font-weight: normal; text-align: left; border: 1px solid #cfcfcf; margin: 0; border-right-width: 0;
+    padding: 0; vertical-align: top;
+    &:last-child { border-right-width: 1px; }
+    .title { padding: 5px; display: inline-block; }
+    .sorter {
+      color: #1A59C1; cursor: pointer; position: relative; margin-right: 15px; margin-left: 5px;
+      padding: 5px 0 3px;
+      &:after {
+        position: absolute; right: -10px; top: 2px; content: '↕';
+      }
+      &.asc:after { content: '↑'; }
+      &.desc:after { content: '↓'; }
+    }
+    .filter {
+      display: block; border-top: 1px solid #cfcfcf; margin-top: 0; padding-top: 3px; position: relative;
+      margin-left: 0; margin-right: 0; padding-right: 23px; color: #1A59C1; cursor: pointer; padding-bottom: 3px;
+      &:after {
+        position: absolute; right: 5px; top: 4px; content: ''; width: 16px; height: 16px;
+        background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMCw2NGwxOTIsMTkydjE5MmwxMjgtMzJWMjU2TDUxMiw2NEgweiIgZmlsbD0iIzFhNTljMSIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=) no-repeat;
+      }
+    }
+  }
+  td {
+    text-align: left; border: 1px solid #cfcfcf; margin: 0; border-right-width: 0; padding: 5px;
+    border-top-width: 0;
+    &:last-child { border-right-width: 1px; }
+  }
+
+  .pseudo-link {
+    border-bottom: 1px dashed #1A59C1; color: #1A59C1; cursor: pointer; position: relative; margin-right: 10px;
+  }
+}
