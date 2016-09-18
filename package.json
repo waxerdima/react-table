@@ -1,6 +1,6 @@
 {
   "name": "ui-react-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Table for React",
   "main": "./dist/react-table.js",
   "style": "./dist/react-table.css",
